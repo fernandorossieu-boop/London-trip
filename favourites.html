@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favourites | London Trip</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body data-page="favourites">
+    <header class="site-header">
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">London Trip</a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="favourites.html" aria-current="page">Favourites (<span data-fav-count>0</span>)</a>
+        <a href="about.html">About London</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="section-block">
+      <h1>Your Saved Favourites</h1>
+
+      <div id="no-favourites-msg" class="empty-state" style="display: none;">
+        <p>You have no favourite attractions saved yet.</p>
+        <a href="attractions.html" class="btn btn-primary">Browse Attractions</a>
+      </div>
+
+      <div id="favourites-list" class="cards-grid"></div>
+    </section>
+  </main>
+</body>
+</html>
